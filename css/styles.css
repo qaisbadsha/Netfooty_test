@@ -1,0 +1,18 @@
+
+#sidebar {
+    position:absolute;
+    top:0; bottom:0; left:0;
+    width:200px;
+    background: #00176E;
+}
+
+p {
+	color: #D1F4FF;
+	font-size: 120%;
+}
+
+body {
+
+	background: #23176E;
+
+}

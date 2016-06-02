@@ -3,17 +3,13 @@
 <html>
 	<head>   <!-- scripts will go here. I am just trying out this comment -->
 		<title>"NetFooty.Net - Be a player!"</title>
-		<script type="text/javascript">
-		function change() {
-			var x = document.getElementById("team_select").value; // try by name
-
-			alert(x +"    Welcomes you!");
-		}
-
+		<script type="text/javascript" src= script.js>
 		</script>
 
+
+	<link rel ="stylesheet" href="css/styles.css">
 	</head>
-	<body bgcolor = #23176E >
+	<body onload="time_left()">
 
 	<p style = "color:#D1F4FF;" align="center">
 		<font size=8>
@@ -21,6 +17,12 @@
 		</font> <br>
 	</p>
 
+
+		<!-- a sidebar -->
+
+    		<p id ="sidebar">
+    			This is the side box
+    		</p>
 
 
 		<!-- Our image will be here to click on a country. It will be an image with links-->
@@ -72,7 +74,7 @@
 			</select>
 
 			<br>
-			<input type ="submit" name ="submit" onclick="change()" value = "Confirm Information">
+			<input type ="submit" name ="submit" onclick="welcome()" value = "Confirm Information">
 
 		</form>
 
