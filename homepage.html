@@ -3,6 +3,15 @@
 <html>
 	<head>   <!-- scripts will go here. I am just trying out this comment -->
 		<title>"NetFooty.Net - Be a player!"</title>
+		<script type="text/javascript">
+		function change() {
+			var x = document.getElementById("team_select").value; // try by name
+
+			alert(x +"    Welcomes you!");
+		}
+
+		</script>
+
 	</head>
 	<body bgcolor = #23176E >
 
@@ -47,11 +56,23 @@
 			<input type = "checkbox" name ="midfielder" value = "on">
 			midfielder <br>
 
-
-			<input type = "checkbox" name ="striker" value = "on">
-			striker <br>
+			<input type = "checkbox" name ="striker" value = "on" >
+			striker <br><br>
 			<!-- WE need to add more to this later. More detail. Central midfield and deep lying etc... but not make it too complicated -->
 
+			Which team are you applying for?
+
+
+			<!-- this is the clubs menu. Eventually you would be able to get here by clicking on the map -->
+			<select id="team_select" name = "premierleagueteamslist" >
+				<option value = "Arsenal" selected> Arsenal </option>
+				<option value = "Liverpool"> Liverpool </option>
+				<option value = "ManchesterUnited"> Man United </option>
+				<option value = "westham" > West Ham </option>
+			</select>
+
+			<br>
+			<input type ="submit" name ="submit" onclick="change()" value = "Confirm Information">
 
 		</form>
 
